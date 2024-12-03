@@ -1,0 +1,189 @@
+body {
+background-image: url('../css/img/fondooo.jpg');
+
+background-position: 0%;
+
+    font-family: 'Arial', sans-serif; /* Fuente general */
+}
+h1{
+    color: rgb(240, 206, 15);
+}
+h3 {
+    font-size: 3rem;
+    color: #ffffff; /* Color azul oscuro */
+    text-align: center; /* Centrado */
+}
+
+p {
+    text-align: center; /* Centrado */
+    color: #000000; /* Color para el correo */
+    font-size: 1.8rem; /* Tamaño de fuente para el correo */
+    text-decoration: underline; /* Subrayado */
+}
+
+form {
+    max-width: 450px; /* Hacer el formulario más pequeño */
+    margin: 0 auto;
+    padding: 30px;
+background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-group-text {
+    background-color: #008cff; /* Color de fondo del icono azul */
+    color: #fff; /* Color blanco para el icono */
+}
+
+.table {
+    width: 80%; /* Ancho de la tabla ajustado */
+    margin-left: 200px; /* Mueve la tabla 20px a la derecha */
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #1e3a5f; /* Bordes más oscuros */
+    border-radius: 10px;
+    overflow: hidden; /* Para aplicar bordes redondeados */
+}
+
+.table th, .table td {
+    padding: 10px; /* Espaciado ajustado */
+    text-align: center;
+    font-size: 1rem;
+    color: #1e3a5f;
+    border-bottom: 1px solid #1e3a5f; /* Añadido borde inferior */
+}
+
+.table thead {
+    background-color: #4b86b4; /* Azul más oscuro para encabezados */
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(160, 196, 255, 0.3); /* Azul claro para filas pares */
+}
+
+.table tbody tr:hover {
+    background-color: rgba(160, 196, 255, 0.5); /* Azul claro al pasar el mouse */
+}
+
+.action-btn {
+    padding: 8px 12px; /* Ajuste del padding */
+    background-color: #001fb8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #1e3a5f; /* Azul oscuro al pasar el mouse */
+}
+
+.registrar_producto {
+    background-color: #80bfff; /* Azul pastel */
+    border-radius: 15px;
+    color: #1e3a5f;
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+    transition: transform 0.3s ease;
+}
+
+.registrar_producto:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: rgba(0, 167, 186, 0.432);
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #008cff;
+    color: white;
+}
+
+.modal-footer {
+    border-top: none;
+}
+/* General container for the cards */
+
+
+/* Card styles */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a light touch */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding: 30px; /* Increased padding for more space inside the card */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 550px; /* Increased height for better image display */
+    background-color: rgba(96, 97, 91, 0.171); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Adds a blur effect for a frosted glass look */
+    color: #e39b00;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image styles */
+.card-image {
+
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    color: #e39b00;
+}
+
+/* Card info styles */
+.cards-container {
+    display: grid;
+    grid-template-areas: 
+        "card1 card2 card3 card4"
+        "card5 card5 card5 card5"
+        "card6 card6 card6 card6"
+        "card7 card8 card9 card10";
+    gap: 30px; /* Espacio entre las tarjetas */
+    margin-top: 20px;
+}
+
+.card:nth-child(1) { grid-area: card1; }
+.card:nth-child(2) { grid-area: card2; }
+.card:nth-child(3) { grid-area: card3; }
+.card:nth-child(4) { grid-area: card4; }
+.card:nth-child(5) { grid-area: card5; }
+.card:nth-child(6) { grid-area: card6; }
+.card:nth-child(7) { grid-area: card7; }
+.card:nth-child(8) { grid-area: card8; }
+.card:nth-child(9) { grid-area: card9; }
+.card:nth-child(10) { grid-area: card10; }
+
+.btn-action {
+    background-color: #000000; /* Lavender for the action button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-action:hover {
+    background-color: #ffffff; /* Slightly darker lavender for hover effect */
+}
+
+/* Responsive Design: Stack the cards for smaller screens */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px){
+    .cards-comtainer{
+        grid-template-columns: 1fr;
+    }
+}

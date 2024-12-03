@@ -1,0 +1,74 @@
+/* aqui debo mover para login y registro*/
+
+form {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5); /* Resplandor blanco */
+    width: 100%;
+    max-width: 400px; /* Contenedor más pequeño */
+}
+
+.c-user h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text-highlight {
+    color: #ffca28;
+}
+
+.c-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.c-input input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.c-input input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.c-input input:focus {
+    outline: none;
+    border-bottom: 2px solid #ffca28;
+}
+
+.c-input i {
+    color: #ffca28;
+}
+
+.c-button button {
+    background-color: #ffca28;
+    border: none;
+    color: #333;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.c-button button:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+}
+
+a {
+    color: #ffca28;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
